@@ -1,0 +1,15 @@
+# Optional dependencies — needed ONLY for reading matrices from images (OCR).
+# The forward-elimination core (project_Dr_shreif.py) and the GUI (project_Dr_shreif_ui.py)
+# work with Python's standard library alone. Install these only if you want image input:
+#
+#   pip install -r requirements.txt
+#
+# Notes:
+#   * easyocr downloads a language model the first time an image is read (needs internet).
+#   * easyocr pulls in PyTorch, which is a large download.
+#   * numpy is imported directly by the code and also comes as a dependency of both
+#     easyocr and opencv-python, but it is listed explicitly for clarity.
+
+easyocr>=1.7.0
+opencv-python>=4.8.0
+numpy>=1.24.0
